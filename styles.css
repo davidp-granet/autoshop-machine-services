@@ -42,9 +42,12 @@ img {
   display: block;
 }
 
-button,
-input,
+input[type="text"],
 textarea {
+  font-size: 16px;
+}
+
+button {
   font: inherit;
 }
 
@@ -562,7 +565,7 @@ h2 {
 .contact-form label {
   display: block;
   margin-bottom: 18px;
-  font: 800 11px/1 var(--display);
+  font: 800 12px/1 var(--display);
   text-transform: uppercase;
   letter-spacing: .12em;
 }
