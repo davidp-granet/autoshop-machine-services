@@ -24,3 +24,12 @@ form?.addEventListener('submit', (event) => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const topLinks = document.querySelectorAll('a[href="/"]');
+topLinks.forEach(elem => {
+  elem.addEventListener('click', event => {
+    event.preventDefault();
+    scroll(0, 0);
+    history.replaceState(null, null, '/');
+  });
+});
