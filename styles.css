@@ -211,6 +211,10 @@ button {
   padding-block: 72px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .eyebrow {
   margin: 0 0 14px;
   font: 800 clamp(12px, 1.4vw, 16px)/1.4 var(--display);
@@ -671,6 +675,10 @@ h2 {
 }
 
 @media (max-width: 760px) {
+  .hero-copy > .eyebrow {
+    text-align: center;
+  }
+
   .container {
     width: min(100% - 28px, var(--max));
   }
