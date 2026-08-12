@@ -150,7 +150,7 @@ button {
   cursor: pointer;
 }
 
-.nav-toggle span {
+.nav-toggle span.burger-line {
   display: block;
   height: 2px;
   margin: 5px 0;
