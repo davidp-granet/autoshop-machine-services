@@ -211,17 +211,18 @@ button {
   padding-block: 72px;
 }
 
-h2,
-.cyan-line-before {
-  display: flex;
-  gap: 10px;
-
+.color-cyan {
+  color: var(--cyan);
 }
 
-h2::before,
+.cyan-line-before {
+  display: flex;
+}
+
 .cyan-line-before::before {
   content: "\2014";
   color: var(--cyan);
+  margin-right: 10px;
 }
 
 .nowrap {
