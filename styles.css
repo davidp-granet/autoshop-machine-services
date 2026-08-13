@@ -227,25 +227,11 @@ button {
   color: var(--cyan-dark);
 }
 
-.hero h1,
 h2 {
   margin: 0;
   font-family: var(--display);
   text-transform: uppercase;
   letter-spacing: .03em;
-}
-
-.hero h1 {
-  font-size: clamp(50px, 8vw, 104px);
-  line-height: .83;
-  max-width: 900px;
-  text-shadow: 5px 5px 0 rgba(0, 0, 0, .6);
-}
-
-.hero h1 span {
-  display: inline-block;
-  color: #f3f3f3;
-  margin-left: clamp(28px, 5vw, 72px);
 }
 
 .hero-lead {
@@ -733,14 +719,6 @@ h2 {
 
   .hero-art::before {
     inset: 15% 20%;
-  }
-
-  .hero h1 {
-    font-size: clamp(46px, 14vw, 78px);
-  }
-
-  .hero h1 span {
-    margin-left: 34px;
   }
 
   .section-heading {
