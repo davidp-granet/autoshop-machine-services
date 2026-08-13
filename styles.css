@@ -421,6 +421,17 @@ h2 {
   top: 100px;
 }
 
+.see-all-reviews-button {
+  border: 1px solid rgba(255, 255, 255, .4);
+  padding: 10px 14px;
+  background-color: rgb(23, 24, 27);
+  white-space: nowrap;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+}
+
 .review-grid {
   position: relative;
   display: grid;
@@ -721,7 +732,7 @@ h2 {
     inset: 15% 20%;
   }
 
-  .section-heading {
+  .section-heading:not(.light) {
     align-items: start;
     flex-direction: column;
     margin-bottom: 28px;
@@ -758,6 +769,16 @@ h2 {
     height: 38px;
     flex-basis: 38px;
     font-size: 14px;
+  }
+
+  .section-heading.light {
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+
+  .see-all-reviews-button {
+    width: 100%;
   }
 
   .service-grid,
