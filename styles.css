@@ -211,6 +211,19 @@ button {
   padding-block: 72px;
 }
 
+h2,
+.cyan-line-before {
+  display: flex;
+  gap: 10px;
+
+}
+
+h2::before,
+.cyan-line-before::before {
+  content: "\2014";
+  color: var(--cyan);
+}
+
 .nowrap {
   white-space: nowrap;
 }
@@ -387,17 +400,6 @@ h2 {
   margin: 0;
   font: 900 21px/.98 var(--display);
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.service-card h3::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 2px;
-  background: var(--cyan);
 }
 
 .service-card p {
