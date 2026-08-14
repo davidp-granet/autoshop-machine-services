@@ -254,7 +254,6 @@ h2 {
 
 .hero-lead {
   max-width: 680px;
-  margin: 32px 0 26px;
   font-size: clamp(17px, 2vw, 21px);
   color: #e5e6e7;
 }
