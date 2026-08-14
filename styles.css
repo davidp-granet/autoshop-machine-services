@@ -43,7 +43,7 @@ img {
   display: block;
 }
 
-input[type="text"],
+input,
 textarea {
   font-size: 16px;
 }
