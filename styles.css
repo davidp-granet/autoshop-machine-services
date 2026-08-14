@@ -216,6 +216,10 @@ button {
   padding-block: 72px;
 }
 
+.hero-copy > .eyebrow {
+  text-align: center;
+}
+
 .color-cyan {
   color: var(--cyan);
 }
@@ -697,10 +701,6 @@ h2 {
 }
 
 @media (max-width: 760px) {
-  .hero-copy > .eyebrow {
-    text-align: center;
-  }
-
   .container {
     width: min(100% - 28px, var(--max));
   }
