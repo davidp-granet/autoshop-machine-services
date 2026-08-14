@@ -39,15 +39,16 @@ document.addEventListener('click', event => {
   }
 
   for (
-      let /** @type {HTMLElement} */ element = event.target;
-      element !== document.body;
-      element = element.parentElement
-    ) {
+    let /** @type {HTMLElement} */ element = event.target;
+    element !== document.body;
+    element = element.parentElement
+  ) {
     if (event.target === navMenu) {
       return;
     }
   }
 
+  // Nav menu should be open at this point, based on the query selector
   toggleNavMenu();
 });
 
