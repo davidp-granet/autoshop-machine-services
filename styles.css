@@ -132,13 +132,17 @@ button {
   letter-spacing: .12em;
 }
 
-.site-nav a:not(.nav-phone):hover {
+.site-nav a:hover {
   color: var(--cyan);
 }
 
 .nav-phone {
   border: 1px solid rgba(255, 255, 255, .4);
   padding: 10px 14px;
+}
+
+.nav-phone:hover {
+  border-color: var(--cyan);
 }
 
 .nav-toggle {
@@ -434,6 +438,11 @@ h2 {
   text-decoration: none;
   text-align: center;
   z-index: 1;
+}
+
+.see-all-reviews-button:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
 }
 
 .review-grid {
