@@ -397,10 +397,6 @@ h2 {
   transform: rotate(20deg);
 }
 
-.service-card-wide {
-  grid-column: span 2;
-}
-
 .service-card h3 {
   margin: 0;
   font: 900 21px/.98 var(--display);
@@ -694,10 +690,6 @@ h2 {
   .service-grid,
   .review-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .service-card-wide {
-    grid-column: span 1;
   }
 
   .contact-grid {
