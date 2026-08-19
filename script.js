@@ -99,7 +99,7 @@ function buildPayload() {
 }
 
 function validate(payload) {
-  if (payload.name === "") {
+  if (payload.name < 2) {
     return "Please enter your name.";
   }
 
@@ -114,7 +114,7 @@ function validate(payload) {
     return "Please enter a valid email address.";
   }
 
-  if (payload.message.length === "") {
+  if (payload.message.length < 10) {
     return "Please tell us a little more about what you need.";
   }
 
