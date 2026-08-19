@@ -213,8 +213,7 @@
           <p class="eyebrow dark">Let's talk about your project</p>
           <h2>Request a Quote or Ask a Question</h2>
           <p>
-            Tell us a little about the work you need. This form is currently not functional, so for now it simply demonstrates
-            the intended contact experience.
+            Tell us a little about the work you need.
           </p>
 
           <div class="contact-details">
@@ -239,10 +238,21 @@
         <form class="contact-form" id="contact-form">
           <div class="form-row">
             <label>Name<input type="text" name="name" autocomplete="name" required></label>
-            <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
           </div>
-          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Email<input type="email" name="email" autocomplete="email"></label>
+          <div class="website-input" aria-hidden="true">
+            <label for="website">Website</label>
+            <input
+              id="website"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+              maxlength="256"
+            >
+          </div>
           <label>Message<textarea name="message" rows="7" required></textarea></label>
+          <input type="hidden" name="challenge_response" value="">
           <button class="button button-primary" type="submit">Send Message</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
