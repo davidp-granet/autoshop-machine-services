@@ -645,6 +645,11 @@ h2 {
   font-size: 13px;
 }
 
+.website-input {
+  position: absolute;
+  left: -9999px;
+}
+
 .site-footer {
   background: #111214;
   color: white;
