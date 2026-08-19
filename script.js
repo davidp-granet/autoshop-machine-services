@@ -1,8 +1,6 @@
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 const navLinks = document.querySelectorAll('.site-nav a');
-const form = document.getElementById('contact-form');
-const status = document.getElementById('form-status');
 
 function toggleNavMenu() {
   const open = nav.classList.toggle('open');
@@ -22,11 +20,6 @@ navLinks.forEach(link => {
       toggleNavMenu();
     }
   });
-});
-
-form?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  status.textContent = 'Thanks! The form is ready to be connected to a backend.';
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -66,8 +59,8 @@ topLinks.forEach(elem => {
 const ENDPOINT =
   "https://mercury.granet.tech/api/intake/public/95e78fd7cc0869e1c1b28098056758d5/";
 
-const form = document.querySelector("#contact-form");
-const status = document.querySelector("#form-status");
+const form = document.getElementById('contact-form');
+const status = document.getElementById('form-status');
 const submitButton = form.querySelector('button[type="submit"]');
 
 function showStatus(message, state = "") {
