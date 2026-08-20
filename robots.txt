@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://autoshopmachineservices.com/sitemap.xml
