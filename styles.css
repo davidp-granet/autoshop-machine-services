@@ -416,24 +416,21 @@ h2 {
   overflow: hidden;
 }
 
-.reviews::before {
+.reviews::before, .reviews::after {
   content: "";
   position: absolute;
   width: 450px;
   height: 450px;
   border: 70px solid rgba(20, 172, 224, .06);
   border-radius: 50%;
+}
+
+.reviews::before {
   right: -250px;
   top: 100px;
 }
 
 .reviews::after {
-  content: "";
-  position: absolute;
-  width: 450px;
-  height: 450px;
-  border: 70px solid rgba(20, 172, 224, .06);
-  border-radius: 50%;
   left: -250px;
   bottom: -200px;
 }
