@@ -472,11 +472,12 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
+  top: 75%;
   z-index: -1;
   background: linear-gradient(
     to top,
     color-mix(in srgb, var(--cyan), var(--review-bg) 75%) 0%,
-    transparent 25%
+    transparent 100%
   );
   transform: translateY(100%);
   transition: transform .25s ease;
