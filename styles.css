@@ -464,10 +464,34 @@ h2 {
   flex-direction: column;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.review-card:hover {
-  background: linear-gradient(to top, color-mix(in srgb, var(--cyan), var(--review-bg) 75%)  0%, var(--review-bg) 25%);
+.review-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  top: 75%;
+  z-index: -1;
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--cyan), var(--review-bg) 75%) 0%,
+    transparent 100%
+  );
+  transform: translateY(100%);
+  transition: transform .25s ease;
+  pointer-events: none;
+}
+
+.review-card:hover::before {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-card::before {
+    transition: none;
+  }
 }
 
 .stars {
