@@ -479,7 +479,7 @@ h2 {
     transparent 25%
   );
   transform: translateY(100%);
-  transition: transform .35s ease;
+  transition: transform .25s ease;
   pointer-events: none;
 }
 
