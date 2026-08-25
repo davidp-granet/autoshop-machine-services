@@ -473,7 +473,11 @@ h2 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to top, color-mix(in srgb, var(--cyan), var(--review-bg) 75%) 0%, var(--review-bg) 25%);
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--cyan), var(--review-bg) 75%) 0%,
+    transparent 25%
+  );
   transform: translateY(100%);
   transition: transform .35s ease;
   pointer-events: none;
