@@ -690,9 +690,11 @@ h2 {
 }
 
 .footer-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  row-gap: 22px;
+  justify-content: space-between;
   align-items: center;
   font-size: 12px;
 }
@@ -854,9 +856,5 @@ h2 {
 
   .contact-form {
     padding: 22px 18px;
-  }
-
-  .footer-inner {
-    grid-template-columns: 1fr;
   }
 }
