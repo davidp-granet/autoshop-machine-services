@@ -234,8 +234,45 @@ button {
   margin-right: 10px;
 }
 
-.nowrap {
+.hero-subtext > span {
+  font-size: 16px;
   white-space: nowrap;
+}
+
+/* .hero-subtext > span + span::before {
+  content: "· ";
+} */
+
+.hero-subtext > span::after {
+  --dot-size: 2px;
+  --dot-size-plus-one: calc(var(--dot-size) + 1px);
+  --word-spacing: 1em;
+  content: " ";
+  word-spacing: var(--word-spacing);
+  /* background-image: linear-gradient(
+    90deg,
+    transparent calc(50% - var(--dot-size)),
+    currentColor calc(50% - var(--dot-size)) calc(50% + var(--dot-size)),
+    transparent calc(50% + var(--dot-size))
+  ); */
+  background-image: radial-gradient(
+    currentColor var(--dot-size),
+    transparent var(--dot-size-plus-one),
+    transparent calc(100% - var(--dot-size-plus-one))
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: var(--word-spacing) var(--word-spacing);
+  /* background-size: 100% calc(var(--dot-size) * 2); */
+  /* background-size: 100% calc(var(--word-spacing) + var(--dot-size-plus-one)); */
+  /* background-size: 100% var(--dot-size); */
+}
+
+@media (max-width: 350px) {
+  .hero-subtext > span::after {
+    content: '\A';
+    white-space: pre;
+  }
 }
 
 .eyebrow {
